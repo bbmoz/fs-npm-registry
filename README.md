@@ -17,3 +17,6 @@ You can modify *config.yaml* directly without restarting the registry. See [docs
 To use your NPM registry, you can do one of the following:
 1. Add the line `registry = http://${npm-registry-ip}:4000/` to your *.npmrc* file. Or,
 1. Run `npm set registry http://${npm-registry-ip}:4000/` in your project.
+
+## Deps
+1. [docker](https://docs.docker.com/docker-for-mac/install/)
