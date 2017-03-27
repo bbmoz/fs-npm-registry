@@ -35,7 +35,7 @@ start: deps
 	docker pull keyvanfatehi/sinopia
 	-docker stop npm-registry
 	-docker rm npm-registry
-	docker run --name npm-registry -v $$(pwd)/config.yaml:/opt/sinopia/config.yaml -d -p 4000:4000 keyvanfatehi/sinopia
+	docker run --name npm-registry -v $$(pwd)/config.yaml:/opt/sinopia/config.yaml -d -p $(REGISTRY_PORT):4000 keyvanfatehi/sinopia
 	docker ps
 	$(MAKE) post-task-msg name=$@
 
