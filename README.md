@@ -1,6 +1,6 @@
 # NPM Registry CC
 
-> Spin up your own fs NPM registry on a docker container with caching that proxies to npmjs with minimal configuration.
+> Spin up your own NPM registry on a docker container with caching that proxies to npmjs with minimal configuration.
 
 ## Tasks
 1. `make start` or `make` to start the registry in the background on a docker container.
@@ -19,6 +19,3 @@ To use your NPM registry, you can do one of the following:
 1. Add the line `registry = http://${npm-registry-ip}:4000/` to your *.npmrc* file. Or,
 1. Run `npm set registry http://${npm-registry-ip}:4000/` in your project.
 
-## Deps
-1. [docker](https://docs.docker.com/docker-for-mac/install/)
-1. [direnv](https://github.com/direnv/direnv)
