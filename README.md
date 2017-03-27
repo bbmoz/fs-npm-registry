@@ -1,6 +1,6 @@
-# FS NPM Registry
+# NPM Registry CC
 
-> Spin up your own private NPM registry (sinopia) on a docker container with caching that proxies to npmjs with minimal configuration.
+> Spin up your own fs NPM registry on a docker container with caching that proxies to npmjs with minimal configuration.
 
 ## Tasks
 1. `make start` or `make` to start the registry in the background on a docker container.
